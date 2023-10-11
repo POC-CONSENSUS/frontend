@@ -5,6 +5,8 @@ import './App.css';
 
 class App extends Component {
 
+  const [data, setData] = useState(null);
+
   useEffect(() => {
     fetch('http://aggeragtor:8080')
       .then(response => response.json())
