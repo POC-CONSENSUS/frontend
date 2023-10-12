@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('https://aggeragtor-rh-ee-symartin-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/', { mode: 'cors' })
+    fetch('http://aggeragtor:8080',)
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
