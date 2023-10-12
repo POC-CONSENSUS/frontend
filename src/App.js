@@ -1,27 +1,24 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+function App() {
 
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://aggeragtor:8080')
+    fetch('https://aggeragtor-rh-ee-symartin-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/', { mode: 'cors' })
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
   }, []);
 
-  
-  render() {
-    return (
-      <div className="App">
-        {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}  
-      </div>
-    );
-  }
+
+  return (
+    <div className="App">
+      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
+    </div>
+  );
 }
 
 export default App;
