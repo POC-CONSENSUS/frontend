@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://aggeragtor:8080',)
+    fetch('https://aggregator-rh-ee-symartin-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com',)
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
