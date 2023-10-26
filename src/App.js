@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('https://aggregator-rh-ee-symartin-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com',)
+    fetch('https://consensus-user1-apicast-production.apps.cluster-sglv8.sglv8.sandbox2890.opentlc.com:443/?user_key=2a8d9328738a099871b0b5919b4f175d')
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.error(error));
