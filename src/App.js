@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      {data ? <pre>{JSON.parse(data)}</pre> : 'Loading...'}
+      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
     </div>
   );
 }
