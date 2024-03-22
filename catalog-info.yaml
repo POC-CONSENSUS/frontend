@@ -2,6 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: frontend
+  description: This frontend is the UI to generate the naming convention.
+  tags:
+    - frontend
+    - reactjs
   annotations:
     github.com/project-slug: POC-CONSENSUS/frontend
 spec:
