@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: frontend
+  annotations:
+    github.com/project-slug: POC-CONSENSUS/frontend
+spec:
+  type: service
+  lifecycle: production
+  owner: smartinus44
