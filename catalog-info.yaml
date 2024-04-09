@@ -6,5 +6,5 @@ metadata:
     github.com/project-slug: POC-CONSENSUS/frontend
 spec:
   type: service
-  lifecycle: production
+  lifecycle: experimental
   owner: group:poc-consensus/awesometeam
