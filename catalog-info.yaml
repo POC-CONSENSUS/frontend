@@ -8,6 +8,7 @@ metadata:
     - reactjs
   annotations:
     github.com/project-slug: POC-CONSENSUS/frontend
+    quay.io/repository-slug: rh_ee_symartin/poc
 spec:
   type: service
   lifecycle: experimental
