@@ -14,3 +14,17 @@ spec:
   lifecycle: experimental
   owner: group:poc-consensus/awesometeam
   system: naming-convention-generator
+
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: naming-convention-generator
+  tags:
+    - backstage
+    - janus-idp
+    - openshift
+    - workshop
+spec:
+  owner: group:poc-consensus/awesometeam
